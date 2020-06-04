@@ -30,3 +30,7 @@ for (let i=0; i<name.length; i++) {
     console.log(name[i]);
 }
 
+// Create an Array of names (strings) with every person in the class
+// as an element of the array (let names = ['bob', 'frank'...])
+// add my name (eric) to the array
+// use forEach to print out each name
