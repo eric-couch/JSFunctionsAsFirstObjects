@@ -34,3 +34,34 @@ for (let i=0; i<name.length; i++) {
 // as an element of the array (let names = ['bob', 'frank'...])
 // add my name (eric) to the array
 // use forEach to print out each name
+
+let names = ['Rashad', 'Maurice', 'Marissa', 'Tigre'];
+//names.push('Eric');
+names.unshift('Eric');
+names.forEach(x => console.log(x));
+
+
+let nbateams = ['Atlanta Hawks', 'Boston Celtics', 'Brooklyn Nets', 'Charlotte Hornets',
+                'Chicago Bulls'];
+
+nbateams.unshift('Cleveland Cavaliers');
+nbateams.unshift('Dallas Mavericks');
+nbateams.unshift('Denver Nuggets');
+nbateams.unshift('Detroit Pistons');
+nbateams.unshift('Golden State Warriors');
+
+nbateams.push('Houston Rockets');
+nbateams.push('Indiana Pacers');
+nbateams.push('LA Clippers');
+nbateams.push('Los Angeles Lakers');
+nbateams.push('Memphis Grizzlies');
+console.log(nbateams);
+let twoNBATeam = nbateams.splice(0,2);
+console.log(nbateams);
+twoNBATeam[0] = twoNBATeam[0].toUpperCase();
+console.log(nbateams);
+console.log(twoNBATeam);
+nbateams.push(twoNBATeam[0]);
+nbateams.sort();
+nbateams.forEach(x => console.log(x));
+
