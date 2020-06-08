@@ -55,13 +55,20 @@ nbateams.push('Indiana Pacers');
 nbateams.push('LA Clippers');
 nbateams.push('Los Angeles Lakers');
 nbateams.push('Memphis Grizzlies');
-console.log(nbateams);
+// console.log(nbateams);
 let twoNBATeam = nbateams.splice(0,2);
-console.log(nbateams);
+// console.log(nbateams);
 twoNBATeam[0] = twoNBATeam[0].toUpperCase();
-console.log(nbateams);
-console.log(twoNBATeam);
+// console.log(nbateams);
+// console.log(twoNBATeam);
 nbateams.push(twoNBATeam[0]);
 nbateams.sort();
-nbateams.forEach(x => console.log(x));
+//nbateams.forEach(x => console.log(x));
 
+let unsetArray = new Array(20);
+
+nbateams.forEach(function(x) {
+    if (x.toLowerCase().startsWith('d')) {
+        console.log(x);
+    } 
+})
